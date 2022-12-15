@@ -5,19 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AP6</title>
+    <title>AP9</title>
 </head>
 
 <body>
     <script>
-        for (i = 1; i <= 1000000; i++) {
-            document.write(`<p> ${i} </p>`);
-            // suma= suma + i;
-            suma += i;
-
+        let n = eval(prompt('Dati numarul de numere', 10));
+        let i = 1;
+        while (i <= n) {
             console.log(i);
+
+
+            i += 2;
         }
-        document.write(`<p>suma este ${suma} </p>`);
+        let j = 1;
+        do {
+            console.log(j);
+            j += 2;
+        } while (j <= n)
     </script>
 </body>
 
