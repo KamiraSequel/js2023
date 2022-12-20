@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP8</title>
+</head>
+
+<body>
+    <script>
+        function inmultire(a, b) {
+            return a * b;
+        }
+        function adunare(c, d = 5) {
+            if (typeof c == "number" && typeof d == "number") {
+                return c + d;
+            }
+            else {
+                return 0;
+            }
+        }
+        function scadere(n, m) {
+            if (n < m) {
+
+                return m - n;
+
+            }
+            else {
+                return n - m;
+            }
+        }
+        function impartire(e, f) {
+            if (e < f) {
+                return parseInt(e / f);
+            }
+            else {
+                return parseInt(e / f);
+            }
+        }
+        let x = eval(prompt('Primul numar este', 2));
+        let y = eval(prompt('Al 2-lea numar este', 4));
+        let op= 'a';
+        let operatie = eval(prompt('Operatia efectuata este: a- adunare, s- scadere, im- impartire, in- inmultire'));
+        if (op == 'a') {
+            console.log('Rezultatul adunarii este', adunare(x, y))
+        }
+
+        console.log(inmultire(6, 9));
+
+        console.log(adunare(`Adunarea dintre ${c} si ${d} este`, adunare(c, d)));
+    </script>
+</body>
+
+</html>
