@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP11</title>
+</head>
+
+<body>
+    <script>
+        function Student(idSt, numeSt, varstaSt, nota1St = 0, nota2St = 0) {
+            this.id = idSt;
+            this.nume = numeSt;
+            this.varsta = varstaSt;
+            this.nota1 = nota1St;
+            this.nota2 = nota2St;
+            this.examen = false;
+            this.salut = function () {
+                console.log('Salut!' + this.nume);
+            }
+            this.mergeLaExamen = function () {
+                if (this.examen === true && this.nota1 == 0) {
+                    this.nota1 = nota;
+                }
+                else if (this.examen === true && this.nota2 == 0) {
+                    this.nota2 = nota;
+                }
+                else {
+                    console.log('Este absent!');
+                }
+            }
+        }
+        Student.prototype.calMedia = function () {
+            return (this.nota1 + this.nota2) / 2
+        }
+
+        const st1 = new Student(1, 'Popescu Marian', 20);
+        const st2 = new Student(2, 'Ionescu Dan', 21);
+        st1.salut();
+        st2.salut();
+        st1.examen = true;
+        st1.mergeLaExamen(10);
+        st1.mergeLaExamen(8);
+    </script>
+</body>
+
+</html>
