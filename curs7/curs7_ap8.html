@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP8</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit 0776398473 amet consectetur adipisicing elit. Adipisci necessitatibus voluptatem beatae
+        quia ratione eveniet esse consequatur minus omnis quas consequuntur, incidunt qui recusandae, error quam
+        facilis. Ad, quam incidunt!</p>
+
+    <p id=sursa>Lorem ipsum dolor sit amet consectetur 0938743233 adipisicing elit. Voluptatibus laborum numquam
+        aliquam. Quod laborum iste aspernatur aut quaerat quia. Illo nostrum, velit laudantium a animi quaerat tempore
+        officiis dignissimos praesentium! +4 0832456784
+
+        Earum hic molestiae, eos quae explicabo +4 3543212257 maxime eveniet? Sequi magnam quia impedit quam ullam vitae cumque,
+        tempora saepe earum ut, quod nam. Aperiam fugit omnis, rem quibusdam animi impedit nisi.
+    </p>
+    <p id="destinatie"></p>
+    <script>
+        let sursa = document.getElementById('sursa').innerHTML;
+        console.log(sursa);
+        let pattern = /[\+][0-9]{10,16}/g;
+        let result = sursa.match(pattern);
+        document.getElementById("destinatie").innerHTML = result;
+    </script>
+</body>
+
+</html>
